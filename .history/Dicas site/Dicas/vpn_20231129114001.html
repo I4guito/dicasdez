@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="padrao.css">
+    <script src="/Dicas site/script.js"></script>
+    <title>VPN</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <a href="javascript:history.back()" class="voltar-btn">&#8592; Voltar</a>
+            <h1>VPN</h1>
+        </header><br>
+
+        <section>
+            <h2>Configurar VPN</h2>
+            <p>Clique no botão abaixo para ver passo a passo da configuração de VPN Windows e OpenVPN</p>
+            <a href="/Dicas site/Dicas/configvpn.html" class="link-instrucoes">VPN e OpenVPN - Clique Aqui</a>
+        </section>
+    </div><br>
+
+    <div class="container">
+        <h2> Informações gerais VPN</h2>
+        <p>É bom ficarem atentos para o cliente de VPN do TJRS, o FortiClient. Nossa VPN não funciona se tiver o FortiClient na Micro/Notebook...</p>
+        <p><strong>Os IPs dos servidores vpn:</strong>
+        <blockquote>|-> 192.140.1.114 - VPN4</blockquote>
+        <blockquote>|-> 192.140.1.112 - VPN3</blockquote>
+        </p><br>
+        <p><strong>A VPN tem timeout de tempo de conexão: </strong></p>
+        <blockquote>|-> VPN2 8 horas</blockquote>
+        <blockquote>|-> VPN3 e VPN4 9 horas.</blockquote><br>
+        <p><strong>Limite de usuário por VPN</strong></p>
+        <blockquote>|-> VPN1: ????? (não sei)</blockquote>
+        <blockquote>|-> VPN2: 256</blockquote>
+        <blockquote>|-> VPN3: 1024</blockquote>
+        <blockquote>|-> VPN4: 2048</blockquote>
+    </div><br>
+
+    <div class="container">
+        <h2>O que fazer quando não conseguir conectar na VPN</h2>
+        <p>|-> Perguntar a quanto tempo existe essa VPN e qual foi a última vez que ele acessou</p>
+        <p>|-> Verificar se o problemas não é com as credenciais do Windows</p>
+        <p>|-> Caso já esteja criado e a VPN seja a VPN2, verificar se foi tudo feito corretamente (seguir o manual) -> preferencialmente criar a VPN3 e VPN4 pois a 2 está muito cheia</p>
+        <p>|-> Tentar acessar a VPN ali pelos "Adaptadores de rede" dentro do "Painel de Controle"</p>
+        <p>|-> Tentar acessar pelo rasphone (discador do Windows para acessar VPN)
+            <blockquote>\_> Ir em "C:\Windows\System32" </blockquote>
+            <blockquote>\_> Executar o rasphone.exe</blockquote>
+            <blockquote>\_> Selecionar a VPN e fazer o processo comos e conectasse no Windows 7, não esquecendo do poagj no domínio</blockquote>
+        </p>
+        <p>|-> Caso ainda dê problema, deletar as Wan miniport no "Gerenciador de dispositivos" na parte de "Adaptadores de rede" e clicar para procurar mudanças de hardware
+            <blockquote>\_> Caso ainda dê problema e seja Windows 10, digite "Redefinição da rede", clique para definir e reinicie o notebook</blockquote>
+        </p>
+        
+        <p>|-> Em último, configurar a OpenVPN
+            <a href="/Dicas site/Dicas/configvpn.html" class="link-instrucoes"> VPN e OpenVPN</a> </p>
+    </div><br>
+
+    <div class="container">
+        <h2>Não acessa pastas quando usando o OpenVPN</h2>
+        <p>|-> Primeira solução é desinstalar essa versão e instalar a mais recente: < https://openvpn.net/downloads/openvpn-connect-v3-windows.msi ></https:></p>
+        <P>|-> Segunda solução é colocar o poapgj\ antes do login nas credenciais do Windows
+            <blockquote>\_> Deslogar primeiro da OpenVPN, não sei se isso afeta na hora de trocar as credenciais</blockquote>
+            <blockquote>\_> Pesquisar por "Gerenciador de Credenciais"</blockquote>
+            <blockquote>\_> Ir em "Credenciais do Windows"</blockquote>
+            <blockquote> \_> Ir em "Editar" na parte onde tem uma subtítulo com esse nome(Credenciais do Windows)</blockquote>
+            <blockquote>\_> Colocar o poapgj\ antes do login e salvar</blockquote>
+            <blockquote>\_> Tentar acessar de novo</blockquote>
+        </P>
+    </div><br>
+
+    <div class="container">
+        <h2>Não carrega a intra mesmo conectado na VPN</h2>
+        <P>|-> Pessoal, antivirus avast não permitindo acessar a intra, para resolver pode adicionar os domínios do MPRS mprs.mp.br e mp.rs.gov.br na, lista de exceções
+        </P>
+    </div><br>
+
+    <div class="container">
+        <h2>Requisitar acesso a VPN</h2>
+        <p>|-> PROMOTORES(AS) já possuem acesso para a VPN (todas, desde a 1 até a 4)</p>
+        <p>|-> Servidores e estagiários, sendo os dois voluntários ou não, precisam solicitar acesso
+            <blockquote> (E-mail pro apoio com cópia para a chefia, ou a própria chefia (possivelmente um promotor) envia o E-mail)</blockquote></p>
+        <p>|-> Terceirizados NÃO possuem acesso</p>
+        <p>|-> Após será enviado o manual de como fazer a VPN para o e-mail dele</p>
+    </div><br>
+
+
+    <div class="container">
+        <h2>Acessar o Consultas Integradas estando na VPN</h2>
+        <p>|-> Em Windows 10:
+            <blockquote>\_> Add-VpnConnectionRoute -ConnectionName "VPN3-MPRS" -DestinationPrefix "172.27.2.0/23"</blockquote>
+            <blockquote>\_> De preferência deixar esse nome para essa VPN, qualquer coisa renomear o que tá escrito para o que o usuário tem</blockquote>
+        </p>
+
+        <p>|-> Em Windows 7 e 8:
+            <blockquote>\_> Desmarcar o gateway</blockquote>
+            <blockquote>\_> Verificar se a métrica está igual a 5 (ou 1)</blockquote>
+            <blockquote>\_> Executar o script do Valtoir em modo administrador</blockquote>
+            <blockquote>\_> Depois digitar o comando no cmd, também em modo admnistrador, para executar a tarefa ao logar na VPN</blockquote>
+            <blockquote>\_> Deslogar da VPN se estiver logado</blockquote>
+            <blockquote>\_> Recarregar a página com CTRL + F5 ou limpar o cache, fechar o navegador e testar de novo</blockquote>
+            <blockquote>\-> Caso ocorra problema nessa criação (por Valtoir):
+                <blockquote>\_> Já vi casos em que o serviço agendador de tarefas do Windows não está sendo executado, ou que por algum outro motivo a tarefa não foi criada ou o script que a tarefa executa acabou não sendo copiado para a pasta C:\Windows. Basicamente, são essas três as possíveis causas para não funcionar.</blockquote>
+            </blockquote>
+          
+        </p>
+    </div><br>
+
+
+    <div class="container">
+        <h2>Em relação à VPN1</h2>
+        <P>|-> Promotores são os únicos que já possuem acesso</P>
+        <P>|-> Qualquer outro deve solicitar para o Apoio o acesso a VPN1 exclusivamente</P>
+        <P>|-> Ela é usada para acessar em último caso de problemas nas VPNs normais (melhor o OpenVPN primeiro) OU para poder acessar os sistemas do MP quando estiver num Mac</P>
+        <P>|-> Consultas Integradas e Infoseg não conseguem ser acessados por ela, para isso deverá configurar a Área de Trabalho Remota</P>
+        <P>|-> Configuração da VPN1 tem manual, mas em caso de dúvida tirar no grupo do Apoio ou com o Florindo</P>
+
+
+    </div><br>
+
+
+    <div class="container">
+        <h2>No celular</h2>
+        <p></p>
+        <p></p>
+    </div><br>
+
+    <div class="container">
+        <h2></h2>
+    </div><br>
+
+    <div class="container">
+        <h2></h2>
+    </div><br>
+
+
+
+
+
+
+
+
+
+    <div class="container">
+        <footer>
+            <p>&copy; 2023 Apoio ao Usuário. Todos os direitos reservados.</p>
+        </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="padrao.css">
+    <script src="/Dicas site/script.js"></script>
+    <title>SIM</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <a href="javascript:history.back()" class="voltar-btn">&#8592; Voltar</a>
+            <h1>Sua Página</h1>
+        </header>
+        <section>
+            <h2>Informações Importantes</h2>
+            <ul>
+                <li>-> Sim, Judicial sempre é do tipo PJ. Quando for NF, DP, IC PA*, é extrajudicial</li>
+                <li>-> Ele tá programado para abrir na segunda tela as janelas que são abertas, porém só funciona no Firefox</li>
+                <li>-> SIM Judicial só aceita PDF!</li>
+                <li>-> Segundo o informado, a assinatura no SIM só funciona pelo aplicativo (firefox verde)</li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Limite máximo</h2>
+            <ul>
+                <li>|-> documentos: 50 MB <blockquote>\_> arquivos permitidos pelo SIM (que eu saiba)<blockquote>|-> .pdf</blockquote></li>
+                <li>|-> vídeos: 50 MB <blockquote>\_> arquivos de vídeo permitidos pelo SIM (que eu saiba)<blockquote>|-> .mp4</blockquote><blockquote>|-> .webm</blockquote></blockquote></li>
+                <li>|-> áudios: 50 MB  <blockquote> \_> arquivos de áudio permitidos pelo SIM (que eu saiba)<blockquote>|-> .mp3</blockquote>\_> arquivos NÃO permitidos<blockquote>|-> .opus<br>|-> .ogg</blockquote></li>
+                <li>|-> imagens também são aceitas, mas não todas (preferencialmente enviar como um documento PDF ou inserir dentro de um Word e transformar em PDF depois):
+                    <blockquote>\_> .jpg e .png são aceitos</blockquote>
+                    <blockquote>\_> bitmap não é aceito</blockquote>
+                </li>
+                <li></li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Não deixa juntar áudio e vídeo no SIM, só PDF</h2>
+            <ul>
+                <li>|-> Tem que ser feito no sistema diretamente (no caso o EPROC)</li>
+                <li></li>
+
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Editor do SIM</h2>
+            <ul>
+                <li>|-> Não tem como inserir nota de rodapé, pois a intenção é ser um editor simples de texto</li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Não consegue assinar</h2>
+            <ul>
+                <li>|-> Verificar se o java está executando (extensões/plugins)</li>
+                <li>|-> Verificar se o CSP Banrisul lê o certificado digital
+                    <blockquote>\_> Qualquer coisa precisa instalar o CSP Banrisul</blockquote>
+                    <blockquote>\_> Pode ser problema de driver</blockquote>
+                    <blockquote>\_> Pode ser problema de encaixe na porta usb</blockquote>
+                    <blockquote>\_> Pode ser problema de limpeza na parte do chipe do cartão</blockquote>
+                </li>
+                <li>|-> Verificar se não há certificados antigos ou duplicados</li>
+                <li>|-> Verificar se o DLL tá inserido corretamente onde precisa</li>
+                <li>|-> Verificar se não está usando o SIM MPRS e ocorre erro de Java ao assinar ou tentar, aí pode consultar a sessão com nome "SIM MPRS".</li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Visualizar documento</h2>
+            <ul>
+                <li>|-> Para não dar nenhum problema, utilizar o Firefox</li>
+                <li>|-> Caso não abra alguma página do folheador (tipo Autos), verificar o Flash
+                    <blockquote>\_> Pressionar "Alt" do teclado ou clicar direito no navegador e abrir "Barra de Menus"</blockquote>
+                    <blockquote> \_> Ir em "Extensões"</blockquote>
+                    <blockquote>\_> Ir em "Plugins"</blockquote>
+                    <blockquote> \_> O Shockwave Flash deve estar em "Sempre ativar"</blockquote>
+                    <blockquote>\_> Dar Ctrl + F5 para ver se carrega a página da forma correta</blockquote>
+                </li>
+              
+                
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Abre PDF fora do SIM (direto no Adobe Reader)</h2>
+            <ul>
+                <li>|-> Ir em opções</li>
+                <li>|-> Aplicativos</li>
+                <li>|-> Achar o "PDF" e colocar para "Visualizar no Firefox"</li>
+                <li>|-> Testar (ou recarregar a página e testar)</li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Página no folheador fica totalmente preta ou branca</h2>
+            <ul>
+                <li>|-> Dar Ctrl + F5</li>
+                <li>|-> Dar Ctrl + Shift + Del e limpar o cache</li>
+                <li>|-> Procurar opção de "Restaurar" para reconfigurar automaticamente o Firefox</li>
+
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Página no folheador fica com mensagem "Falha ao carregar"</h2>
+            <ul>
+                <li>|-> Se for PJ
+                    <blockquote>\_> Limpar cache e dar ctrl + f5</blockquote>
+                    <blockquote>\_> Verificar a versão do Flash</blockquote>
+                    <blockquote>\_> Usar o Google Chrome e ver se carrega</blockquote>
+                    <blockquote>\_> Falar com o avançado caso o problema persista</blockquote>
+
+                </li>
+                
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Sistema não carrega:</h2>
+            <ul>
+                <li>|-> Tentar acessar o SIM utilizando outros servidores:
+
+                    <blockquote>\_> http://sisprd1.mp.rs.gov.br:11180/sim/</blockquote>
+                    <blockquote>\_> http://sisprd3.mp.rs.gov.br:11180/sim/</blockquote>
+                    <blockquote>\_> http://sisprd4.mp.rs.gov.br:11180/sim/</blockquote>
+                    <blockquote>\_> http://sisprd4.mp.rs.gov.br:11280/sim/</blockquote>
+                    <blockquote></blockquote>
+                    <blockquote></blockquote>
+                </li>
+                
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Campo para digitar o PIN sumiu</h2>
+            <ul>
+                <li> |-> Verificar se há o plugin do Java no Firefox</li>
+                <li>|-> Se não há, verificar se o Java está instalado
+                    <blockquote>\_> Verificar se carrega a assinatura no Internet Explorer</blockquote>
+                    <blockquote>\_> Desinstalar o Java e reinstalar</blockquote>
+                    <blockquote>\_> Ver se funciona</blockquote>  
+                </li><br>
+
+                <h2>Autos ou alguma outra coisa nunca termina de carregar</h2>
+                
+                <li>|-> Limpar cache do navegador (Ctrl + Shift + Delete)</li>
+                <li>|-> Caso ainda persista, usar o Ccleaner</li>
+                <li>|-> Pedir ajuda e possivelmente abrir chamado</li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2>Imprimir documento no folheador</h2>
+            <ul>
+                <li>|-> Só imprimi a página atual</li>
+                <li>|-> Para imprimir tudo será necessário transformar em PDF</li>
+
+                <h2>Campos verdes no editor do SIM</h2>
+                <li>|-> São TAGS, ou seja, o conteúdo é preenchido de outro ponto</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2></h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section><br>
+
+        <section>
+            <h2></h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section><br>
+
+
+
+        <footer>
+            <p>&copy; 2023 Apoio ao Usuário. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

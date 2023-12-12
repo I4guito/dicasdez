@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <script src="path/to/bootstrap/js/bootstrap.min.js"></script>
+    <script src="path/to/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <title>Dicas 10</title>
+</head>
+<body>
+    <header>
+        <h1>Dicas 10</h1>
+        <nav>
+            <ul>
+                <li><a href="/Dicas site/Sobre/sobre.html">Sobre </a></li>
+                <li><a href="/Dicas site/Desenvolvedores/desen.html">Desenvolvedores</a></li>
+                <li><a href="/Dicas site/Mais/Mais.html">Mais</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="searchBar" placeholder="Pesquisar..." oninput="filterItems()">
+    </header>
+    
+    <main>
+        <div class="column" id="column1">
+            <div class="box" onclick="openPage('/Dicas site/Dicas/contasacesso')">Contas de Acesso</div>
+            <div class="box" onclick="openPage('/Dicas site/programas/programas')">Programas usados e seus usos</div>
+            <div class="box" onclick="openPage('Dicas/pclento')">Computador Lento</div>
+            <div class="box" onclick="openPage('Dicas/eproc')">EPROC</div>
+            <div class="box" onclick="openPage('Dicas/macbook')">Macbook</div>
+            <div class="box" onclick="openPage('Dicas/dns')">DNS</div>
+            <div class="box" onclick="openPage('Dicas/waths')">Wathsapp</div>
+            <div class="box" onclick="openPage('Dicas/tjrsap')">Assinador e Particionador TJRS</div>
+            <div class="box" onclick="openPage('Dicas/arquivosderede')">Arquivos de Rede</div>
+        </div>
+        
+        <div class="column" id="column2">
+            <div class="box" onclick="openPage('Dicas/recomenda')">Recomendações para trabalhar</div>
+            <div class="box" onclick="openPage('Dicas/chamado')">Chamados</div>
+            <div class="box" onclick="openPage('Dicas/notebook')">Notebook</div>
+            <div class="box" onclick="openPage('Dicas/ips')">Endereços IPs no Ministério Público</div>
+            <div class="box" onclick="openPage('Dicas/pastapro')">Solicitar acesso para a pasta da promotoria</div>
+            <div class="box" onclick="openPage('Dicas/pendrive')">Pendrive</div>
+            <div class="box" onclick="openPage('Dicas/senhas')">Senhas</div>
+            <div class="box" onclick="openPage('Dicas/365')">Office 365</div>
+            <div class="box" onclick="openPage('Dicas/cmd')">Comandos CMD</div>
+        </div>
+        
+        <div class="column" id="column3">
+            <div class="box" onclick="openPage('Dicas/sapoio')">Sobre o apoio</div>
+            <div class="box" onclick="openPage('Dicas/pdf')">PDF</div>
+            <div class="box" onclick="openPage('Dicas/vnc')">VNC</div>
+            <div class="box" onclick="openPage('Dicas/seeu')">SEEU</div>
+            <div class="box" onclick="openPage('Dicas/requisiçãoequip')">Requisitar novo equipamento</div>
+            <div class="box" onclick="openPage('Dicas/leitorcartao')">Leitor de Cartão</div>
+            <div class="box" onclick="openPage('Dicas/cgasite')">Sites Bloqueados</div>
+            <div class="box" onclick="openPage('Dicas/impressoras')">Impressoras</div>
+            <div class="box" onclick="openPage('Dicas/Scanner')">Scanner</div>
+        </div>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2023 Apoio ao usuário. Todos os direitos reservados.</p>
+    </footer>
+   
+</body>
+</html>
+

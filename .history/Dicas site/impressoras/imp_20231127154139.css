@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p{
+    font-size: 18px;
+}
+
+.step {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.step h2 {
+    color: #3498db;
+}
+
+.step p {
+    color: #555;
+}
+
+.step img {
+    max-width: 0%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.voltar-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-btn:hover {
+    background-color: #777;
+}

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+.voltar-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-btn:hover {
+    background-color: #777;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.link-instrucoes {
+    font-family:cursive;
+    width: 50px;
+    left: 10px;
+    text-decoration: ;
+    color: #fff;
+    font-size: 25px;
+    padding: 3px;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  background-color 0.3s;
+}
+
+.link-instrucoes:hover {
+    background-color:#777
+}

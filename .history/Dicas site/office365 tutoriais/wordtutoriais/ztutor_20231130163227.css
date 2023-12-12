@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img {
+    max-width: 100px;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgb(2, 2, 78);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.problems-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.problems-list h2 {
+    color: #0078D4;
+}
+
+.problems-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.problems-list li {
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background-color: #53616b;
+}
+
+.problems-list li:last-child {
+    border-bottom: none; /
+}
+
+.problems-list a {
+    text-decoration: none;
+    color: #0078D4;
+    transition: color 0.3s;
+}
+
+.problems-list a:hover {
+    color: #004377;
+}
+
+footer {
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.link-instrucoes {
+    font-family:cursive;
+    width: 50px;
+    left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 3px;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  background-color 0.3s;
+}
+
+.link-instrucoes:hover {
+    background-color:#777
+}
+
+
+.voltar-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-btn:hover {
+    background-color: #777;
+}
+
+
+.step {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    color: #333;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

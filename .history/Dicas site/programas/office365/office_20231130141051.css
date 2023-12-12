@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #005c4b;
+}
+
+header {
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.resources {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.resource {
+    border: 1px solid #0078D4;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.resource:hover {
+    background-color: #0078D4;
+    color: white;
+}
+
+footer {
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.voltar-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-btn:hover {
+    background-color: #777;
+}

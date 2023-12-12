@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="padrao.css">
+    <script src="/Dicas site/script.js"></script>
+    <title>Dicas 10 - Perfil de usuário com problema</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+        <a href="javascript:history.back()" class="voltar-btn">&#8592; Voltar</a>
+            <h1>Perfil de usuário com problema </h1>
+        </header>
+        <section>
+            <h2> Caso apresenta o erro de que não foi possível carregar o perfil de usuário </h2>
+            <ul>
+                <li>|-> Chamado referente ao problema: <a href="https://glpi.mp.rs.gov.br/glpi/front/ticket.form.php?id=284136">(284136)</a></li>
+                <li>|-> Acessar o perfil do xpadmin</li>
+                <li>|-> Abrir o "regedit"</li>
+                <li>|-> Ir em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList</li>
+                <li>|-> Verificar se o perfil está com o .bak no registro
+                    <blockquote>\_> Caso sim, deletar o .bak</blockquote>
+                    <blockquote>\_> se só tiver um arquivo e o final for .bak, editar o nome e deletar a parte do .bak</blockquote>
+                </li>
+                <li>|-> Dar logoff e pedir para a usuária tentar novamente</li>
+                <li>|-> Se não funcionar, refazer tudo isso e trocar o domínio do computador para somente poapgj (ir em computador -> propriedades -> nome do computador e 2°botão)</li>
+                <li>|-> Reiniciar e pedir para o usuário testar de novo</li>
+            
+            </ul>
+        </section><br>
+
+
+        <section>
+            <h2> Recriar perfil estilo curto </h2>
+            <ul>
+                <li>|-> Embora seja uma solução do tipo "partir para a ignorância", às vezes é mais rápida.</li>
+                <li>Como eu faço :
+                    <blockquote></blockquote>
+                    <blockquote></blockquote>
+                    <blockquote></blockquote>
+                    <blockquote></blockquote>
+                    <blockquote></blockquote>
+                </li>
+              
+            </ul>
+        </section><br>
+
+        
+        <footer>
+            <p>&copy; 2023 Apoio ao Usuário. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

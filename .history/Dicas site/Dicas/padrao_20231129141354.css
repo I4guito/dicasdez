@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color:#fff
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+header, section, footer {
+    margin-bottom: 20px;
+}
+
+header h1, section h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    color: #777;
+}
+
+.voltar-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-btn:hover {
+    background-color: #777;
+}
+
+img {
+    
+    margin-inline: 5cm;
+    max-width: 100%;
+    border-radius: 3%;
+}
+
+.link-instrucoes {
+    font-family:cursive;
+    width: 50px;
+    left: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 3px;
+    background-color: #555;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:  background-color 0.3s;
+}
+
+.link-instrucoes:hover {
+    background-color:#777
+}
+
+.step {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    color: #333;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.container img {
+    max-width: 35%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image-container img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.enlarged {
+    transform: scale(1.5);
+}

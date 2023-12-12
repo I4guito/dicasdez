@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="office.css">
+    <script src="/Dicas site/opera.js"></script>
+    <title>Office 365 Tutorial</title>
+</head>
+<body>
+    <header>
+        <a href="javascript:history.back()" class="voltar-btn">&#8592; Voltar</a>
+        <h1>Office 365 Tutorial</h1>
+    </header>
+
+    <section class="resources">
+        <div class="resource" onclick="redirectToTutorial('/Dicas site/programas/office365/aplicações/word')">
+            <h2>Microsoft Word</h2>
+        </div>
+        <div class="resource" onclick="redirectToTutorial('/Dicas site/programas/office365/aplicações/excel')">
+            <h2>Microsoft Excel</h2>
+        </div>
+        <div class="resource" onclick="redirectToTutorial('/Dicas site/programas/office365/aplicações/powerpoint')">
+            <h2>Microsoft PowerPoint</h2>
+        </div>
+        
+        <div class="resource" onclick="redirectToTutorial('/Dicas site/programas/office365/aplicações/Teams.html')">
+            <h2>Microsoft Teams</h2>
+        </div>
+
+        <div class="resource" onclick="redirectToTutorial('/Dicas site/programas/office365/aplicações/outlook.html')">
+            <h2>Microsoft Outlook</h2>
+        </div>
+
+        <div class="resource" onclick="redirectToTutorial('powerpoint')">
+            <h2>Microsoft Onedrive</h2>
+        </div>
+
+        <div class="resource" onclick="redirectToTutorial('powerpoint')">
+            <h2>Microsoft OneNote</h2>
+        </div>
+
+        <div class="resource" onclick="redirectToTutorial('powerpoint')">
+            <h2>Microsoft Sharepoint</h2>
+        </div>
+
+        <div class="resource" onclick="redirectToTutorial('powerpoint')">
+            <h2>Microsoft To Do</h2>
+        </div>
+
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Apoio ao Usuário. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function redirectToTutorial(resource) {
+            window.location.href = resource + '.html';
+        }
+    </script>
+</body>
+</html>

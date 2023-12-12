@@ -1,0 +1,81 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img {
+    max-width: 100px; /* Ajuste o tamanho do logo conforme necessário */
+    margin-top: 10px;
+}
+
+.problems-list {
+    margin: 20px;
+}
+
+.problems-list h2 {
+    color: #0078D4;
+}
+
+.problems-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.problems-list li {
+    margin: 10px 0;
+}
+
+.problems-list a {
+    text-decoration: none;
+    color: #0078D4;
+    transition: color 0.3s;
+}
+
+.problems-list a:hover {
+    color: #004377;
+}
+
+.tutorial-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.voltar-btn {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #555;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.voltar-btn:hover {
+    background-color: #777;
+}
