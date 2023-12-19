@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="imp.css">
+        <script src="opera.js"></script>
+        <title>Passo a Passo Tutorial</title>
+        
+    </head>
+    <body>
+        <header><a href="javascript:history.back()" class="voltar-btn">&#8592; Voltar</a></header>
+    
+        <h1>Impressora não imprime</h1>
+    
+        <div class="step">
+            <h2>Passo 1: |-> Verificar a porta e o driver para saber se estão corretos</h2>
+            <p>
+                Verifique se a porta está correta
+            </p>
+            <img src="/impressoras/imagens/portav.jpeg" alt="Imagem do passo 1"><br><br>
+
+            <p>Verifique se o Driver está correto</p>
+            <img src="/impressoras/imagens/driverver.jpeg" alt="Imagem do passo 1">
+
+        </div>
+    
+        <div class="step">
+            <h2>Passo 2: |-> Verificar se pode imprimir o documento (principalmente PDF) em outros programas como: Google Chrome, FoxitReader, Adobe Reader e ver se consegue imprimir através dele</h2>
+            <p>
+               Se conseguir, reinstalar o programa novamente ou instalar outro para o seu lugar (exemplo: colocar o foxit no lugar do adobe)
+            </p>
+        </div>
+
+        <div class="step">
+            <h2>Passo 3: Parar o spooler (no serviço)</h2>
+            <p>
+                |-> Abra os Serviços e localize a opção 'Spooler de Impressão'. Clique com o botão direito sobre ela e selecione a opção 'Parar'.
+            </p>
+            <img src="/impressoras/imagens/spoolerserviço.jpeg" alt="Imagem do passo ">
+        </div>
+
+        <div class="step">
+            <h2>Passo 4: |-> Excluir todas as impressões que estão na fila</h2>
+            <p>
+                Localize em:  \_> C:\Windows\System32\spool\PRINTERS
+            </p>
+            <img src="/Dicas site/impressoras/imagens/Printers.jpeg" alt="Imagem do passo ">
+        </div>
+
+        <div class="step">
+            <h2>Passo 5: |-> Iniciar o spooler novamente e testar</h2>
+            <p>
+                Se ainda não funcionar, desinstalar a impressora e instalar de novo (recomendável desinstalar por Gerenciamento de Impressão)
+
+            </p>
+            
+        </div>
+     
+    
+      
+    
+    </body>
+    </html>

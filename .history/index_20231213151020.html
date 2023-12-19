@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <title>Dicas 10</title>
+</head>
+<body>
+    <header>
+        <h1>Dicas 10</h1>
+        <nav>
+            <ul>
+                <li><a href="/sobre/sobre.html">Sobre </a></li>
+                <li><a href="/desenvolvedores/desen.html">Desenvolvedores</a></li>
+                <li><a href="/mais/mais.html">Mais</a></li>
+            </ul>
+        </nav>
+        <input type="text" id="searchBar" placeholder="Pesquisar..." oninput="filterItems()">
+    </header>
+    
+    <main>
+        <div class="column" id="column1">
+            <div class="box" onclick="openPage('/dicas/contasacesso')">Contas de Acesso</div>
+            <div class="box" onclick="openPage('/programas/programas')">Programas usados e seus usos</div>
+            <div class="box" onclick="openPage('Dicas/pclento')">Computador Lento</div>
+            <div class="box" onclick="openPage('Dicas/eproc')">EPROC</div>
+            <div class="box" onclick="openPage('Dicas/macbook')">Macbook</div>
+            <div class="box" onclick="openPage('Dicas/dns')">DNS</div>
+            <div class="box" onclick="openPage('Dicas/waths')">Wathsapp</div>
+            <div class="box" onclick="openPage('Dicas/tjrsap')">Assinador e Particionador TJRS</div>
+            <div class="box" onclick="openPage('Dicas/arquivosderede')">Arquivos de Rede</div>
+            <div class="box" onclick="openPage('Dicas/amendoim')">Amendoim</div>
+            <div class="box" onclick="openPage('Dicas/vpn')">VPN</div>
+            <div class="box" onclick="openPage('Dicas/sgp')">SGP</div>
+            <div class="box" onclick="openPage('Dicas/pje')">PJE</div>
+            <div class="box" onclick="openPage('Dicas/sim')">SIM</div>
+            <div class="box" onclick="openPage('Dicas/simmprs')">SIM MPRS</div>
+            <div class="box" onclick="openPage('Dicas/certmp')">Certificados MP</div>
+            <div class="box" onclick="openPage('Dicas/telefonia')">Telefonia (chamado para problemas de telefone)</div>
+            <div class="box" onclick="openPage('Dicas/chrome')">Google Chrome</div>
+            <div class="box" onclick="openPage('Dicas/mozilla')">Mozilla Firefox</div>
+            <div class="box" onclick="openPage('Dicas/mtsc')">Conexão remota (mtsc)</div>
+            <div class="box" onclick="openPage('Dicas/arearemota')">Area de trabalho remota (PDF + Vídeo) </div>
+            <div class="box" onclick="openPage('Dicas/consultasi')">Consultas integradas</div>
+            <div class="box" onclick="openPage('Dicas/etiqueta')">Etiqueta</div>
+            <div class="box" onclick="openPage('Dicas/sobrevideos')">Vídeos</div>
+        </div>
+        
+        <div class="column" id="column2">
+            <div class="box" onclick="openPage('Dicas/recomenda')">Recomendações para trabalhar</div>
+            <div class="box" onclick="openPage('Dicas/chamado')">Chamados</div>
+            <div class="box" onclick="openPage('Dicas/notebook')">Notebook</div>
+            <div class="box" onclick="openPage('Dicas/ips')">Endereços IPs no Ministério Público</div>
+            <div class="box" onclick="openPage('Dicas/pastapro')">Solicitar acesso para a pasta da promotoria</div>
+            <div class="box" onclick="openPage('Dicas/pendrive')">Pendrive</div>
+            <div class="box" onclick="openPage('Dicas/senhas')">Senhas</div>
+            <div class="box" onclick="openPage('Dicas/msoffice')">Office/MSOffice</div>
+            <div class="box" onclick="openPage('Dicas/365')">Office 365</div>
+            <div class="box" onclick="openPage('Dicas/access')">MSAccess</div>
+            <div class="box" onclick="openPage('Dicas/cmd')">Comandos CMD</div>
+            <div class="box" onclick="openPage('Dicas/penmodem')">Pen-Modem</div>
+            <div class="box" onclick="openPage('Dicas/intranet')">Intranet</div>
+            <div class="box" onclick="openPage('Dicas/qualificador')">Qualificador</div>
+            <div class="box" onclick="openPage('Dicas/glpi')">GLPI</div>
+            <div class="box" onclick="openPage('Dicas/maprede')">Mapear pastas de rede</div>
+            <div class="box" onclick="openPage('Dicas/certificadoeassinatura')">Certificado Digital / Assinatura Digital</div>
+            <div class="box" onclick="openPage('Dicas/banvalid')">Desbloquear Cartão (Banrisul ou Valid) </div>
+            <div class="box" onclick="openPage('Dicas/docxn')">.docx não aparece ao tentar adicionar novo arquivo word</div>
+            <div class="box" onclick="openPage('Dicas/tombo')">Tombo do computador</div>
+            <div class="box" onclick="openPage('Dicas/explorer')">Internet Explorer</div>
+            <div class="box" onclick="openPage('Dicas/windowscompmp')">Windows / Computador MP</div>
+            <div class="box" onclick="openPage('Dicas/perfilproblema')">Perfil de usuário com problema</div>
+            <div class="box" onclick="openPage('Dicas/sobreaudios')">Áudios</div>
+        </div>
+        
+        <div class="column" id="column3">
+            <div class="box" onclick="openPage('Dicas/sapoio')">Sobre o apoio</div>
+            <div class="box" onclick="openPage('Dicas/pdf')">PDF</div>
+            <div class="box" onclick="openPage('Dicas/vnc')">VNC</div>
+            <div class="box" onclick="openPage('Dicas/seeu')">SEEU</div>
+            <div class="box" onclick="openPage('Dicas/requisiçãoequip')">Requisitar novo equipamento</div>
+            <div class="box" onclick="openPage('Dicas/leitorcartao')">Leitor de Cartão</div>
+            <div class="box" onclick="openPage('Dicas/cgasite')">Sites Bloqueados</div>
+            <div class="box" onclick="openPage('Dicas/impressoras')">Impressoras</div>
+            <div class="box" onclick="openPage('Dicas/scanner')">Scanner</div>
+            <div class="box" onclick="openPage('Dicas/pasta')">Pastas</div>
+            <div class="box" onclick="openPage('Dicas/alguistemas')">UFED READER, GUARDIÃO, SUP, SEFAZ, SUP & PROCERGS</div>
+            <div class="box" onclick="openPage('Dicas/P')">Portal do Processo Eletrônico (PPE)</div>
+            <div class="box" onclick="openPage('Dicas/integra')">Integra MPRS</div>
+            <div class="box" onclick="openPage('Dicas/odbc')">Banco de Dados (ODBC)</div>
+            <div class="box" onclick="openPage('Dicas/anydesk')">AnyDesk</div>
+            <div class="box" onclick="openPage('Dicas/sja')">SJA e MPCON</div>
+            <div class="box" onclick="openPage('Dicas/banricert')">Banrisul (Certificado Digital)</div>
+            <div class="box" onclick="openPage('Dicas/banrisite')">Banrisul (Site)</div>
+            <div class="box" onclick="openPage('Dicas/pontosoft')">Ponto Soft</div>
+            <div class="box" onclick="openPage('Dicas/videoconfe')">Videoconferência / Webconferência</div>
+            <div class="box" onclick="openPage('Dicas/loginmp')">Login</div>
+            <div class="box" onclick="openPage('Dicas/formatosinc')">Formatos incomuns de arquivos / Extensão incomum</div>
+            <div class="box" onclick="openPage('Dicas/wifi')">Wifi</div>
+            <div class="box" onclick="openPage('Dicas/sobreimagens')">Imagens</div>
+        </div>
+    </main><br><br><br><br><br><br><br><br><br>
+
+    
+    <footer>
+        <p>&copy; 2023 Apoio ao usuário. Todos os direitos reservados.</p>
+    </footer>
+   
+</body>
+</html>
+

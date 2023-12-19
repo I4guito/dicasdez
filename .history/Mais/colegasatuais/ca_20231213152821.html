@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CA.css">
+    <script src="CA.js"></script>
+    <title>Equipe Atual</title>
+</head>
+<body>
+
+    <header>
+        <a href="javascript:history.back()" class="voltar-btn">&#8592; Voltar</a>
+        <h1>Estagiários presentes</h1>
+    </header>
+
+    
+
+    <section id="estagiarios">
+
+        <div class="estagiario">
+            <img src="/Desenvolvedores/iagoamaral.jpg" alt="Foto" class="foto" onclick="mostrarInfo('IAGO JOSÉ ROSA DO AMARAL ', 'Inicio: 17/01/2023 <br> Localização: Andrade Neves')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Iago </h2>
+        </div>
+
+        <div class="estagiario">
+            <img src="" alt="Foto" class="foto" onclick="mostrarInfo('GABRIEL KRZIMINSKI FRANCISCO ', 'Inicio: 06/07/2023 <br> Localização: Andrade Neves <br> Nota:  Fica vendo meme')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Gabriel </h2>
+        </div>
+        
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/GUSTAVO DA ENCARNACAO RODRIGUES.jpg" alt="Foto" class="foto" onclick="mostrarInfo('GUSTAVO DA ENCARNACAO RODRIGUES ', 'Inicio:  <br> Localização: Andrade Neves <br> Nota: Esse cara ama trabalhar no MP <br> Nota 2: Começa a rir de tu falar a palabra boi')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Gustavo </h2>
+        </div>
+        
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/JOÃO MARCELO CASANOVA GULARTE.jpg" alt="Foto" class="foto" onclick="mostrarInfo('JOÃO MARCELO CASANOVA GULARTE', 'Inicio: 14/02/2023 <br> Localização: Andrade Neves <br> Nota: Cortou o cabelo <br> Nota 2: Só vejo dormindo')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> João </h2>
+        </div>
+
+
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/KESLLEY GREGORY MARQUES GONZALEZ.jpg" alt="Foto" class="foto" onclick="mostrarInfo('KESLLEY GREGORY MARQUES GONZALEZ ', '  Inicio: 13/09/2023 <br> Localização: Andrade Neves <br> Nota: Todo dia ele faz um curso diferente e diz que não pode atender pq tá assistindo um suposto curso <br> Nota 2: Ao contrário do Gustavo, ele não gosta de trabalhar')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Keslley </h2>
+        </div>
+        
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/LELIO LUIZ CRUZ DA COSTA.jpg" alt="Foto" class="foto" onclick="mostrarInfo('LELIO LUIZ CRUZ DA COSTA', 'Inicio: 17/10/2023 <br> Localização: Torres')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Lélio </h2>
+        </div>
+
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/LUCAS DA SILVA.jpg" alt="Foto" class="foto" onclick="mostrarInfo('LUCAS DA SILVA ', 'Inicio: 16/05/2023 <br> Localização: Torres')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Lucas </h2>
+        </div>
+
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/OtacirFernandoDaSilva.jpg" alt="Foto" class="foto" onclick="mostrarInfo('OTACIR FERNANDO DA SILVA', 'Inicio: ??/??/???? <br> Localização: Torres')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Otacir </h2>
+        </div>
+
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/RODRIGO FRANCO.jpg" alt="Foto" class="foto" onclick="mostrarInfo('RODRIGO FRANCO', 'Inicio: 03/05/2023 <br> Localização: Andrade Neves <br> Nota :  Aluno do João, dorme sempre que possível')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> Rodrigo </h2>
+        </div>
+
+        <div class="estagiario">
+            <img src="/Mais/Colegas Atuais/fotos/WILLIAM CORREA DA LUZ.jpg" alt="Foto" class="foto" onclick="mostrarInfo('WILLIAM CORREA DA LUZ', 'Inicio: 23/05/2023 <br> Localização: Torres')">
+            <h2 onclick="mostrarInfo('Estagiário', 'Informações sobre o Estagiário.')"> William  </h2>
+        </div>
+
+
+    </section>
+<br><br><br><br><br><br>
+    <div id="infoModal" class="modal">
+        <span class="fechar" onclick="fecharInfoModal()">&times;</span>
+        <div id="infoConteudo"></div>
+    </div>
+
+    <footer>
+        <p>© 2023 Apoio ao Usuário - Estagiários</p>
+    </footer>
+
+    
+</body>
+</html>
